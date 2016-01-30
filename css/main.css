@@ -1,0 +1,94 @@
+* { margin:0; padding:0; }
+
+html, body {
+    font:1em Arial, sans-serif;
+    color:#333;
+    background:#fff;
+    margin:0;
+}
+
+a, a:visited, a:active { color:#2E9AFE; }
+
+header { 
+    text-align:center;
+    background:#2E9AFE;
+    padding:1.2em;
+}
+
+header h1 {
+    margin:0;
+    padding:0;
+    font-weight:bold;
+    font-size:2em;
+    color:#fff;
+}
+
+header p {
+    color:#fff;
+    font-size:0.75em;
+}
+
+footer {
+    margin:1.2em 0;
+    text-align:center;
+    font-size:0.7em;
+    font-style:italic;
+    color:#565656;
+}
+
+h2 {
+    color:#2E9AFE;
+    font-size:1.35em;
+    margin:2em 0 0 0;
+    padding:0;
+}
+
+p.summary {
+    width:300px;
+    margin:1em auto;
+    line-height:1.2em;
+    text-align:center;
+}
+
+.result {
+    display:none;
+    margin:0;
+    padding:0.8em;
+    font-size:1.15em;
+    background:#348318;
+    text-align:center;
+    color:#fff;
+}
+
+.result .button-block { margin:1em 0 0 0; }
+
+.result #place-name { font-size:1.5em; font-weight:bold; margin:0.3em 0; }
+.result #place-address { font-size:0.7em; }
+
+.form {
+    margin:1em auto;
+    width:300px;
+}
+
+.form div { margin:1em 0; text-align:center; }
+
+.form div.button { margin:2em 0; }
+
+label { padding:1em 0 0.5em 0; display:block; font-weight:bold; font-size:1.2em; }
+
+input[type="text"], select { padding:0.6em; font-size:1.4em; width:250px; text-align:center; }
+
+button {
+    background:#2E9AFE;
+    color:#fff;
+    padding:0.2em 4em;
+    font-size:1.4em;
+    border:1px solid #00f;
+}
+
+.result button {
+    padding:0.1em 1em;
+    font-size:1em;
+}
+
+#map { display:none; }

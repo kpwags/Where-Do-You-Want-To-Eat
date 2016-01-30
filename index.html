@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Where Do You Want To Eat?</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0, minimal-ui" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+</head>
+<body>
+<header>
+<h1>Where Do You Want To Eat?</h1>
+<p>(I don't care, where do you want to go?)</p>
+</header>
+
+<div class="result">
+    We're Eating At<br/>
+    <div id="place-name"></div>
+    <div id="place-address"></div>
+    <div class="button-block">
+        <button class="re-go">Nah...</button>
+    </div>
+</div>
+
+<div id="map"></div>
+
+<p class="summary">Ever have the back and forth with someone trying to figure out where you want to get food?  Yeah, thought so.  Have no fear, you can use this tool to randomly choose a restaurant in the area to eat.  Simply enter your zip code and boom!</p>
+<p class="summary">Looking for something more specific, enter in some keywords to narrow the list down some.</p>
+
+<div class="form">
+    
+    <div class="form-field">
+        <label for="zipcode">Enter Your Zip Code</label>
+        <input type="text" name="zipcode" id="zipcode" />
+    </div>
+
+    <div class="form-field">
+        <label for="customquery">Enter Custom Query (Optional)</label>
+        <input type="text" name="customquery" id="customquery" />
+    </div>
+
+    <div class="form-field">
+        <label for="range">Range</label>
+        <select id="range">
+            <option value="8047">5 Miles</option>
+            <option value="16093" selected="selected">10 Miles</option>
+            <option value="32186">20 Miles</option>
+            <option value="48280">30 Miles</option>
+        </select>
+    </div>
+
+    <ul id="resultlist">
+
+    </ul>
+    
+    <div class="button"><button class="go">Go</button></div>
+</div>
+
+<p class="summary"><em>Note: We ask for your geolocation for the sole purpose of identifying and pre-populating your current Zip Code.  This can be useful if you're somewhere unfamiliar.</em></p>
+
+<footer>&copy; 2016 <a href="http://kpwags.com" target="_blank">Keith Wagner</a></footer>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=GOOGLE_API_KEY&amp;signed_in=true&amp;libraries=places" async defer></script>
+
+</body>
+</html>
