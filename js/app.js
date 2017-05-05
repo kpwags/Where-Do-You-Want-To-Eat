@@ -73,7 +73,7 @@ App = function() {
 
                 internal.getRestaurants();
             } else {
-                chooseRestaurant();
+                internal.chooseRestaurant();
             }
         },
 
